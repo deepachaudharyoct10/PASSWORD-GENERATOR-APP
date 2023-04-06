@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;4000;600&dis" rel="stylesheet">
+
+    <link rel="stylesheet" href="mini.css">
+</head>
+<body>
+    <div class="container">
+    <h1>password Generator</h1>
+    <div class="display-contianer">
+        <input readonly placeholder="Password" class="display" data-passwordDisplay>
+        <button class="copyBtn" data-copy>
+            <span class="tooltip" data-copyMsg></span>
+            <img src="https://www.shutterstock.com/image-vector/copy-content-vector-icon-document-600w-1260468262.jpg" alt="no" height="24" width="24">
+        </button>
+    </div>
+
+    <div class="input-contianer">
+        <div class="length-container">
+            <p>password Length</p>
+            <p data-lengthNumber>0</p>
+        </div>
+
+        <!-- <input type="range" min="1" max="20" class=""> -->
+        <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+        <!-- checkbox -->
+
+        <div class="check">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase Letters</label>
+
+        </div>
+        <div class="check">
+            <input type="checkbox" id="lowercase">
+            <label for="uppercase">Includes lowercase Letters</label>
+            
+        </div>
+        <div class="check">
+            <input type="checkbox" id="numbers">
+            <label for="uppercase">Includes  numbers </label>
+            
+        </div>
+        <div class="check">
+            <input type="checkbox" id="symbols">
+            <label for="uppercase">Includes symbols</label>
+            
+        </div>
+
+        <!-- strength -->
+        <div class=strength-container>
+        <p>Strength</p>
+        <div data-indicator class="indicator"></div>
+        </div>
+        <button class="generateButton">Generate Password</button>
+
+    </div>
+
+<!-- genretor password buutoon -->
+ 
+
+    </div>
+
+
+    <script src="mini.js"></script>
+</body>
+</html>
